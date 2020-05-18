@@ -15,6 +15,14 @@ import { HeroesComponent }      from './heroes/heroes.component';
 import { HeroSearchComponent }  from './hero-search/hero-search.component';
 import { MessagesComponent }    from './messages/messages.component';
 
+import {
+  SumPipe,
+  CheckmarkPipe,
+  ContainsXPipe,
+  FieldRangePipe,
+  ToCapsPipe
+} from './pipes/pipes';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -35,7 +43,12 @@ import { MessagesComponent }    from './messages/messages.component';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    SumPipe,
+    ToCapsPipe,
+    ContainsXPipe,
+    CheckmarkPipe,
+    FieldRangePipe
   ],
   bootstrap: [ AppComponent ]
 })
