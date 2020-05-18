@@ -23,6 +23,8 @@ import {
   ToCapsPipe
 } from './pipes/pipes';
 
+import { ShadowDirective } from './directives/shadow.directive';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -44,6 +46,7 @@ import {
     HeroDetailComponent,
     MessagesComponent,
     HeroSearchComponent,
+    ShadowDirective,
     SumPipe,
     ToCapsPipe,
     ContainsXPipe,
